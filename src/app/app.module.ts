@@ -3,12 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ApiPageComponent } from './components/api-page/api-page.component';
 import { HeaderComponent } from './components/header/header.component';
+import { InputPageComponent } from './components/input-page/input-page.component';
+import { ListPageComponent } from './components/list-page/list-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListPageComponent,
+    InputPageComponent,
+    ApiPageComponent
   ],
   imports: [
     BrowserModule,
