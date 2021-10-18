@@ -1,2 +1,2 @@
 # AngularExercise
-I mini Angular Project 
+A mini Angular Project 
