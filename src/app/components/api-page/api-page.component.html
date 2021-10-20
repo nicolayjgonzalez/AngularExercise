@@ -1,1 +1,20 @@
-<p>api-page works!</p>
+<div style="display: flex; flex-direction: column;">
+    <div class="displayDiv">
+        <button (click)="backPage()">Atras</button>
+        <button (click)="startAgain()">Volver a Inicio</button>
+    </div>
+    <table style="text-align: center;">
+        <tr>
+            <th><strong>First_Name</strong></th>
+            <th><strong>Last_Name</strong></th>
+            <th><strong>Height (in)</strong></th>
+            <th><strong>Height (m)</strong></th>
+        </tr>
+        <tr *ngFor="let player of playerList">
+            <td>{{player.first_name}}</td>
+            <td>{{player.last_name}}</td>
+            <td>{{player.h_in}}</td>
+            <td>{{player.h_meters}}</td>
+        </tr>
+    </table>
+</div>

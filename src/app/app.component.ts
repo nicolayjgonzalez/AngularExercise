@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IDataForm } from './models/data-form';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularExercise';
+  page = 1;
+  dataForm: IDataForm = {};
 }

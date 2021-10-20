@@ -2,5 +2,13 @@
 
 <div class="content" role="main">
   <app-header></app-header>
-  <app-input-page></app-input-page>
+  <ng-container *ngIf="page === 1">
+    <app-input-page [(page)]="page"></app-input-page>    
+  </ng-container>
+  <ng-container *ngIf="page === 2">
+    <app-list-page [(page)]="page"></app-list-page>
+  </ng-container>
+  <ng-container *ngIf="page === 3">
+    <app-api-page [(page)]="page"></app-api-page>
+  </ng-container>
 </div>

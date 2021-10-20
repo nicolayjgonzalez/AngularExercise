@@ -1,14 +1,9 @@
-<div style="display: flex;">
+<div style="display: flex; flex-direction: column;">
 
-
-    <form action="" style="display: grid; align-items: start;">
-        <label for="">Nombre</label>
-        <input type="text"> 
-        <label for="">Apellido</label>
-        <input type="text">
-        <label for="">Edad</label>
-        <input type="number">
+    <form (ngSubmit)="continue()" #forma='ngForm' style="display: grid; max-width: 50%;">
+        <input type="text" #name="ngModel" [(ngModel)]="dataForm.name" placeholder="Nombre" name="name">
+        <input type="text" #name="ngModel" [(ngModel)]="dataForm.lastName" placeholder="Apellido" name="lastName">
+        <input type="number" #name="ngModel" [(ngModel)]="dataForm.age" placeholder="Edad" name="edad">
         <button type="submit">Continuar</button>
     </form>
-
 </div>

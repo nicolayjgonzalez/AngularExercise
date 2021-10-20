@@ -1,1 +1,9 @@
-<p>list-page works!</p>
+<div style="display: flex; flex-direction: column;">
+    <form (ngSubmit)="continue()" #forma='ngForm'>
+        <label>Nombre: {{dataForm.name}}</label>
+        <label>Apellido: {{dataForm.lastName}}</label>
+        <label>Edad: {{dataForm.age}}</label>
+        <button (click)="backPage()">Atras</button>
+        <button type="submit">Continuar</button>
+    </form>
+</div>
